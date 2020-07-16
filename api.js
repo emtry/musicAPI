@@ -107,7 +107,7 @@ api.use(function(req, res) {
                 res.end(JSON.stringify(data))
             });
         } else if (params.type == "net") {
-            qqgetURL(params.id, function(data) {
+            netgetURL(params.id, function(data) {
 
                 res.end(JSON.stringify(data))
             });
