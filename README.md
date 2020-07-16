@@ -1,5 +1,5 @@
 # musicAPI
-聚合QQ音乐、网易云 搜索API
+基于Node.js的音乐搜索 API，聚合 QQ 音乐、网易云的搜索，去重输出 json 格式数据
 
 搜索数据来源：[jsososo/QQMusicApi](https://github.com/jsososo/QQMusicApi)、[Binaryify/NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)
 
