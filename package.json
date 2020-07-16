@@ -1,0 +1,24 @@
+{
+  "name": "musicapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "prerebuilt": "rm -rf QQMusicApi NeteaseCloudMusicApi",
+    "rebuilt": "npm run built",
+    "built": "git clone https://github.com/jsososo/QQMusicApi.git && cd QQMusicApi && npm install && cd ../ &&git clone https://github.com/Binaryify/NeteaseCloudMusicApi.git && cd NeteaseCloudMusicApi && npm install",
+    "prerestart": "ps aux|grep \"node ./bin/www\"|grep -v grep | awk '{print $2}'|xargs kill -9 && ps aux|grep \"node app.js\"|grep -v grep | awk '{print $2}'|xargs kill -9",
+    "restart": "npm start",
+    "start": "cd QQMusicApi && PORT=1326 node ./bin/www & cd NeteaseCloudMusicApi && PORT=6824 node app.js & node server.js"
+  },
+  "author": "emtry",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "async": "^3.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "request": "^2.88.2",
+    "url": "^0.11.0",
+    "util": "^0.12.3"
+  }
+}
