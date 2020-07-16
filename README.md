@@ -72,6 +72,7 @@ npm start
 其他像一些必须要购买数字专辑才能收听的歌曲，如果未购买也是无法获取的，无法获取到的播放链接则不会在返回的对象中出现，
 
 示例：[/song/url?id=002bLdQ92oncT1,002kVQAn270MJZ&type=qq](http://127.0.0.1:9852/song/url?id=002bLdQ92oncT1,002kVQAn270MJZ&type=qq)
+
 [/song/url?id=5256469&type=net](http://127.0.0.1:9852/song/url?id=5256469&type=net)
 
 
