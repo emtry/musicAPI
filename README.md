@@ -42,7 +42,7 @@ npm start
 
 `pageSize`: 返回数量，默认 10
 
-示例：[/search?key=周杰伦](http://127.0.0.1/search?key=周杰伦)
+示例：[/search?key=周杰伦](http://127.0.0.1:9852/search?key=周杰伦)
 
 #### 预览
 接口：`/preview`
@@ -56,7 +56,7 @@ npm start
 
 `pageSize`: 返回数量，默认 10
 
-示例：[/search?key=陈奕迅](http://127.0.0.1/preview?key=陈奕迅)
+示例：[/search?key=陈奕迅](http://127.0.0.1:9852/preview?key=陈奕迅)
 
 ### 播放链接
 
@@ -71,8 +71,8 @@ npm start
 并不是所有的音乐都能获取到播放链接，如果是未登陆或非 vip 用户的 `cookie`，只能获取到非 vip 用户可听的歌曲，
 其他像一些必须要购买数字专辑才能收听的歌曲，如果未购买也是无法获取的，无法获取到的播放链接则不会在返回的对象中出现，
 
-示例：[/song/url?id=002bLdQ92oncT1,002kVQAn270MJZ&type=qq](http://127.0.0.1/song/url?id=002bLdQ92oncT1,002kVQAn270MJZ&type=qq)
-[/song/url?id=5256469&type=net](http://127.0.0.1/song/url?id=5256469&type=net)
+示例：[/song/url?id=002bLdQ92oncT1,002kVQAn270MJZ&type=qq](http://127.0.0.1:9852/song/url?id=002bLdQ92oncT1,002kVQAn270MJZ&type=qq)
+[/song/url?id=5256469&type=net](http://127.0.0.1:9852/song/url?id=5256469&type=net)
 
 
 ### 用户信息
@@ -98,5 +98,5 @@ npm start
 
 `id`: qq号 必填
 
-示例：[/user/detail?id=1234567](http://127.0.0.1/user/detail?id=1234567)
+示例：[/user/detail?id=1234567](http://127.0.0.1:9852/user/detail?id=1234567)
 
