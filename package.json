@@ -7,7 +7,7 @@
     "prerebuilt": "rm -rf QQMusicApi NeteaseCloudMusicApi",
     "rebuilt": "npm run built",
     "built": "git clone https://github.com/jsososo/QQMusicApi.git && cd QQMusicApi && npm install && cd ../ &&git clone https://github.com/Binaryify/NeteaseCloudMusicApi.git && cd NeteaseCloudMusicApi && npm install",
-    "prerestart": "ps aux|grep \"node ./bin/www\"|grep -v grep | awk '{print $2}'|xargs kill -9 && ps aux|grep \"node app.js\"|grep -v grep | awk '{print $2}'|xargs kill -9",
+    "prerestart": "ps aux|grep \"node ./bin/www\"|grep -v grep | awk '{print $2}'|xargs kill -9 && ps aux|grep \"node app.js\"|grep -v grep | awk '{print $2}'|xargs kill -9 && ps aux|grep \"node server.js\"|grep -v grep | awk '{print $2}'|xargs kill -9",
     "restart": "npm start",
     "start": "cd QQMusicApi && PORT=1326 node ./bin/www & cd NeteaseCloudMusicApi && PORT=6824 node app.js & node server.js"
   },
